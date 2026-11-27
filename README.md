@@ -91,7 +91,7 @@ http://localhost:5173/
 | Member 2 | Sorting, filtering, weekly calendar, and progress tracking |
 | Member 3 | UI design, responsive layout, light/dark mode, and integration |
 
-All group members contribute to testing, documentation, and the final presentation.
+All group members contributed to testing, documentation, and the final presentation.
 
 ---
 
@@ -129,8 +129,6 @@ Data persists after refreshing or closing the browser.
 
 ## 🎓 About the Project
 
-StudyTrack was developed as a final group project for **UI 4393 — User Interface**.
-
 The goal is to create a functional and intuitive application that demonstrates:
 
 - User-centered interface design
@@ -140,13 +138,3 @@ The goal is to create a functional and intuitive application that demonstrates:
 - Collaborative software development
 
 ---
-
-## 📌 Project Status
-
-**In Development**
-
-The core assignment management system has been implemented. Additional features and interface improvements are being developed by the team.
-
----
-
-### Made with SvelteKit 💚
