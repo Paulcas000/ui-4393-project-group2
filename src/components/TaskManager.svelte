@@ -1,16 +1,11 @@
 
 <script>
-  import { onMount } from 'svelte';
   import { taskStore } from '../lib/taskStore.svelte.js';
 
   let title = $state('');
   let description = $state('');
   let dueDate = $state('');
   let priority = $state('Medium');
-
-  onMount(() => {
-    taskStore.load();
-  });
 
   function addAssignment() {
     if (!title.trim() || !dueDate) {
@@ -90,7 +85,7 @@
 <h1>StudyTrack</h1>
 <p>Keep track of your assignments.</p>
 
-<section>
+<section class="mb-4">
   <h2>Add Assignment</h2>
 
   <form
@@ -99,34 +94,46 @@
       addAssignment();
     }}
   >
-    <label for="title">Assignment Title</label>
-    <input
-      id="title"
-      bind:value={title}
-      placeholder="Enter title"
-    />
+    <div class="mb-3">
+      <label for="title">Assignment Title</label>
+      <input
+        id="title"
+        class="form-control"
+        bind:value={title}
+        placeholder="Enter title"
+      />
+    </div>
 
-    <label for="description">Description</label>
-    <textarea
-      id="description"
-      bind:value={description}
-    ></textarea>
+    <div class="mb-3">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        class="form-control"
+        rows="3"
+        bind:value={description}
+      ></textarea>
+    </div>
 
-    <label for="dueDate">Due Date</label>
-    <input
-      id="dueDate"
-      type="date"
-      bind:value={dueDate}
-    />
+    <div class="mb-3">
+      <label for="dueDate">Due Date</label>
+      <input
+        id="dueDate"
+        class="form-control"
+        type="date"
+        bind:value={dueDate}
+      />
+    </div>
 
-    <label for="priority">Priority</label>
-    <select id="priority" bind:value={priority}>
-      <option>Low</option>
-      <option>Medium</option>
-      <option>High</option>
-    </select>
+    <div class="mb-3">
+      <label for="priority">Priority</label>
+      <select id="priority" class="form-control" bind:value={priority}>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+    </div>
 
-    <button type="submit">Add Assignment</button>
+    <button class="btn btn-primary" type="submit">Add Assignment</button>
   </form>
 </section>
 
