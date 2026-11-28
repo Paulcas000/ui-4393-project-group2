@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
   <link rel="stylesheet" href="/assets/css/flaticon.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/assets/css/hw4.css" />
 
   <!-- MEMBER 3: Theme CSS -->
   <link rel="stylesheet" href="/assets/css/member3.css" />

@@ -1,6 +1,6 @@
 
 <script>
-	import clock from '../../components/clock.svelte';
+	import Clock from '../../components/clock.svelte';
 </script>
 
-<clock />
+<Clock />

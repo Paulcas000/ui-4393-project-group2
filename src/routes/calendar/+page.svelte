@@ -1,6 +1,6 @@
 
 <script>
-	import calendar from '../../components/calendar.svelte';
+	import Calendar from '../../components/calendar.svelte';
 </script>
 
-<calendar />
+<Calendar />
