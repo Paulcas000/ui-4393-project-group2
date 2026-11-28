@@ -131,4 +131,32 @@
 		color: #1f3d2b;
 		overflow-wrap: anywhere;
 	}
+	
+	.calendar,
+	.calendar th,
+	.calendar td {
+		color: inherit;
+	}
+
+	.calendar th,
+	.calendar td {
+		border-color: currentColor;
+	}
+
+	button.btn-outline-secondary,
+	button.btn-outline-secondary:hover,
+	button.btn-outline-secondary:focus-visible {
+		color: inherit;
+		border-color: currentColor;
+		background-color: transparent;
+	}
+
+	button.btn-outline-secondary:hover {
+		text-decoration: underline;
+	}
+
+	button.btn-outline-secondary:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 2px;
+}
 </style>
